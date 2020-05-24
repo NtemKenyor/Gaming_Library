@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Gaming Library</title>
+
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			canvas {
+				background-color: lightblue;
+			}
+		</style> 
+		<script src="js_library/jquery_funtionality.js"></script>
+		<script src="js_library/Gaming_Library.js"></script>		
+		<script>
+			window.onload = function(){
+				//console.log($('div').css({"background": "blue", "color": "white"}));
+				console.log("Hi there");
+				
+			}
+		</script>
+	</head>
+
+	<body>
+		<canvas id="canvas" width="600" height="600"></canvas> 
+
+		<script>
+			window.onload = function(){
+				createTag("h1", "How are you man", "heads", {"padding": "10px", "color": "#079de1",});
+				//const ctx = $("#canvas").mode("2d");
+				//var game_area = $("body").canvas('s_games',"100vh", "100%");
+				//const ctx = canvas.getContext("2d");
+
+				$("#canvas").mode("2d");
+				// Call the rectangle function
+				$("#canvas").drawRectangle(20, 20, 100, 100, "#432de4", "#435434", "12");
+
+				// Call the circle function
+				$("#canvas").drawCircle(canvas.width / 2, canvas.height / 2, 120, 0, Math.PI * 2, "#d38456", "#de3890", 12, false);
+
+				$("#canvas").drawLine(30, 10, 400, 10, "#def", "#657", 7,);
+				$("#canvas").drawLine(400, 10, 400, 400, "#def", "#093", 7,);
+				$("#canvas").drawLine(400, 400, 30, 10, "#def", "#093", 7,);
+
+				
+		}
+			
+			
+		</script>
+
+	</body>
+</html> 

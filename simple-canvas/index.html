@@ -19,29 +19,20 @@
 	<body>
 		<canvas id="canvas" width="600" height="600"></canvas>
 
+		<script src="js_library/Shapes.js"></script>
+
 		<script>
-			const canvas = document.getElementById("canvas");
-
-			const ctx = canvas.getContext("2d");
-
-			// Function to draw a rectangle on the canvas
-			const drawRectangle = (x, y, width, height) => {
-				ctx.fillStyle = "#222";
-				ctx.fillRect(x, y, width, height);
-			}
-
-			// Function to draw the circle
-			const drawCircle = (x, y, radius, start, end = Math.PI * 2) => {
-				ctx.beginPath();
-				ctx.arc(x, y, radius, start, end);
-				ctx.stroke();
-			}
-
 			// Call the rectangle function
 			drawRectangle(20, 20, 100, 100);
 
+			// Call Semi Circle function
+			drawSemiCircle(500, 50, 60, 0, "#555", 7);
+
 			// Call the circle function
 			drawCircle(canvas.width / 2, canvas.height / 2, 120, 0);
+
+			// Call the trapezium function
+			drawTrapezium(200, 200, 400, 200, 250, 350, 50, 350, 200, 200);
 		</script>
 	</body>
 </html>
